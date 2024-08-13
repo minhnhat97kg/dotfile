@@ -1,0 +1,39 @@
+return {
+  -- "ray-x/go.nvim",
+  -- dependencies = { -- optional packages
+  --   "ray-x/guihua.lua",
+  --   "neovim/nvim-lspconfig",
+  --   "nvim-treesitter/nvim-treesitter",
+  -- },
+  -- config = function()
+  --   require("go").setup({
+  --     -- NOTE: all LSP and formatting related options are disabeld.
+  --     -- NOTE: is not related to core.plugins.lsp
+  --     -- NOTE: manages LSP on its own
+  --     go = "go",         -- go command, can be go[default] or go1.18beta1
+  --     goimports = "gopls", -- goimport command, can be gopls[default] or goimport
+  --     fillstruct = "gopls", -- can be nil (use fillstruct, slower) and gopls
+  --     gofmt = "gofumpt", -- gofmt cmd,
+  --     max_line_len = 0,  -- max line length in goline format
+  --     lsp_codelens = false,
+  --     lsp_inlay_hints = {
+  --       enable = false,
+  --     },
+  --   })
+  --   local format_sync_grp = vim.api.nvim_create_augroup("GoImport", {})
+  --   vim.api.nvim_create_autocmd("BufWritePre", {
+  --     pattern = "*.go",
+  --     callback = function()
+  --       require("go.format").goimport()
+  --     end,
+  --     group = format_sync_grp,
+  --   })
+  --
+  --   -- Keys mapping
+  --   vim.keymap.set("n", "<leader>dr", "<cmd>GoDebug<Cr>", { desc = "Go Debug" })
+  --   vim.keymap.set("n", "<leader>dt", "<cmd>GoBreakToggle<Cr>", { desc = "Go Breakpoint toggle" })
+  -- end,
+  -- event = { "CmdlineEnter" },
+  -- ft = { "go", "gomod" },
+  -- build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
+}
